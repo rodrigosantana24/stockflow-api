@@ -39,13 +39,23 @@ A documentação completa do projeto, incluindo requisitos, user stories, regras
 ## Diagramas
 
 ### Diagrama de Entidades
-![Diagrama de Entidades](docs/diagramas/diagrama-entidades.png)
+
+<img src="docs/diagramas/diagrama-entidades.png"
+     alt="Diagrama de Entidades"
+     width="300" />
 
 ### Diagrama de Arquitetura
-![Diagrama de Arquitetura](docs/diagramas/diagrama-arquitetura.png)
+
+<img src="docs/diagramas/diagrama-arquitetura.png"
+     alt="Diagrama de Arquitetura"
+     width="300" />
 
 ### Diagrama de Fluxo de Usuário
-![Diagrama de Fluxo de Usuário](docs/diagramas/diagrama-fluxo-usuario.png)
+
+<img src="docs/diagramas/diagrama-fluxo-usuario.png"
+     alt="Diagrama de Fluxo de Usuário"
+     width="300" />
+
 
 ---
 
@@ -82,6 +92,6 @@ src/main/java/com/petcare
 
 ## Autor
 
-Rodrigo Santana  
+**Rodrigo Santana**  
 https://www.linkedin.com/in/rodrigo-santana24/
 
