@@ -30,7 +30,7 @@ A documentação completa do projeto, incluindo requisitos, user stories, regras
 - Java  
 - Spring Boot  
 - Spring Security + JWT  
-- MySQL  
+- MySQL e MongoDB  
 - Maven  
 - Arquitetura MVC  
 
@@ -62,16 +62,87 @@ A documentação completa do projeto, incluindo requisitos, user stories, regras
 <h2>Estrutura do Projeto</h2>
 
 <pre>
-src/main/java/com/petcare
- ├── config
- ├── controller
- ├── dto
- ├── entity
- ├── repository
- ├── service
- ├── security
- └── exception
-</pre>
+petcare/
+├── .gitignore
+├── .editorconfig
+├── README.md
+├── pom.xml                      
+├── .env.example                 
+├── docker/
+│   ├── Dockerfile
+│   └── docker-compose.yml      
+├── scripts/
+│   ├── [seed.sh](http://seed.sh/)                 
+│   └── [dev.sh](http://dev.sh/)                   
+├── .github/
+│   └── workflows/
+│       └── ci.yml              
+└── src/
+├── main/
+│   ├── java/
+│   │   └── com/meuprojeto/
+│   │       ├── PetcareApplication.java
+│   │       ├── config/                 
+│   │       ├── security/               
+│   │       ├── exception/              
+│   │       ├── entity/                 
+│   │       ├── repository/             
+│   │       ├── dto/                    
+│   │       │   ├── auth/
+│   │       │   ├── user/
+│   │       │   ├── pet/
+│   │       │   ├── schedule/
+│   │       │   └── review/
+│   │       ├── service/               
+│   │       │   ├── auth/
+│   │       │   ├── user/
+│   │       │   ├── pet/
+│   │       │   ├── schedule/
+│   │       │   └── review/
+│   │       ├── controller/            
+│   │       │   ├── auth/
+│   │       │   ├── user/
+│   │       │   ├── pet/
+│   │       │   ├── schedule/
+│   │       │   └── review/
+│   │       ├── mapper/                
+│   │       ├── util/                   
+│   │       └── common/                
+│   └── resources/
+│       ├── application.yml
+│       ├── application-dev.yml
+│       ├── application-test.yml
+│       ├── db/
+│       │   └── migration/             
+│       ├── messages.properties         
+│       ├── static/                     
+│       └── templates/                  
+└── test/
+├── java/
+│   └── com/meuprojeto/
+│       ├── unit/                  
+│       │   ├── service/
+│       │   │   ├── auth/
+│       │   │   ├── user/
+│       │   │   ├── pet/
+│       │   │   ├── schedule/
+│       │   │   └── review/
+│       │   ├── security/
+│       │   └── util/
+│       ├── web/                   
+│       │   ├── auth/
+│       │   ├── user/
+│       │   ├── pet/
+│       │   ├── schedule/
+│       │   └── review/
+│       ├── repository/             
+│       ├── integration/            
+│       ├── testutils/              
+│       └── fixture/                
+└── resources/
+├── application-test.yml
+├── data/                      
+└── stubs/                      
 
 
 ---
